@@ -6,7 +6,7 @@
 class Point {
 
 //attributes
-private:
+public:
     double x;
     double y;
 
@@ -45,13 +45,16 @@ int main() {
     Point p1(0.0, 0.0);
     Point p2(3.0, 4.0);
 
+    double distance = 0.0;
+
+
     std::cout << "p1 = " << p1.toString() << std::endl;
     std::cout << "p2 = " << p2.toString() << std::endl;
 
-    std::cout << "p2.x = " << p2.getX() << std::endl;
+    std::cout << "p2.x = " << p2.x<< std::endl;
     std::cout << "p2.y = " << p2.getY() << std::endl;
 
-
+    distance = p1.distanceTo(p2);
 
     return 0;
 }

@@ -1,77 +1,42 @@
 # oop-basics
-# Basics — Classes, Objects and Instantiation
-### AQA A-Level Computer Science — Object-Oriented Programming in C++
+# Concepts
 
-## Basic Concepts
+Relationship between **class**es and **object**s.<br>
+How the **constructor** method creates objects.<br>
+The use of **method**s to manipulate **attributes**.<br>
+Purpose of **access modifiers** **private** and **public** [^1].<br>
+The manipulation or interrogation of objects with **methods**.<br>
 
-Relationship between CLASSes and OBJECTs.
-Access modifiers PRIVATE PROTECTED PUBLIC.
-INSTANTIATION of objects.
-METHODS to interrogate or modify objects.
-
-You leaarn through practice with the code in this file.
-Read first, addidng comments to explain each line.
-Run it, by pressing Ctrl+Shift+B.
-Change some of the code, for example location of brakets and size of indents. Find out what your stylistic preference is.
+You learn through practice with the code in this file.
+1. Read the code, trying yo figure out what each line achieves.
+2. Add comments.
+3. Run the file, by pressing Ctrl+Shift+B.
+4. Change some of the code, for example location of brakets and size of indents. Find out what your stylistic preference is.
 Modify the program:
-Add more point objects
-Add methods to the Point class, e.g. 
+1. Add more point objects.
+2. Change the access modifiers to public and use the 'dot' notation to change the attributes.
+2. Add methods to the Point class, for example distanceTo, which should have the following **signature**. Please note that AQA uses the term function interface.
+**Point distanceTo(Point otherPoint)**
 
 
-If there is a compiler error, click on it in the Terminal to jump
-directly to that line in your code.
+## Key vocabulary
 
-## What you are building
-
-A `Point` class that represents a location in 2D space.
-
-| Task | What to do |
-|------|-----------|
-| 1 | Create your own points and experiment |
-| 2 | Write `distanceTo()` using the distance formula |
-| 3 | Write `midpointTo()` returning a new Point |
-
-
-## Key vocabulary for this lesson
-
-| Term | Meaning |
+| Term | Definition |
 |------|---------|
-| Class | A blueprint that defines attributes and methods |
-| Object | A specific instance built from a class |
-| Instantiation | The act of creating an object from a class |
-| Attribute | A variable that belongs to a class |
-| Method | A function that belongs to a class |
-| Constructor | A special method that runs when an object is created |
-| Encapsulation | Hiding data inside a class using `private` |
-| Getter | A method that reads a private attribute |
-
-## AQA specification links
-
-This lesson covers:
-- Class, object, instantiation
-- Encapsulation
-- Public and private specifiers
+| Class | A structure which bundles data and operations on the data. It can be considered a blueprint for creating objects.  |
+| Object | A specific instance of a class. |
+| Instantiation | The process of creating an object from a class byb invoking the contructor of the class. |
+| Attribute | The data which belongs to a class. |
+| Method | A function which belongs to a class. |
+| Constructor | A special method that is called in when an object is created. |
+| Encapsulation | The concept of bundling data and together with operations on the data. |
+| Information Hiding | Stronger form of encapsulation, where access to attributes or methods is limited. |
+| Getter | A method which returns attributes. |
+| Setter | A method which changes attributes. |
 
 
-## Summary
 
-OOP bundles data with the actions on the data in a CLASS
-The data is referred to as ATTRIBUTES
-The actions, akin to functions are referred to as METHODS
-The BUNDLING achieves ENCAPSULATION of the data and actions.
-INFOMRATION HIDING is achoeved by ACCESS MODIFIERS.
-ACCESS MODIFIERS are either PRIVATE, PROTECTED, or PUBLIC
-CLASSES are akin to a BLUEPRINT
-OBJECTS of a class are CONSTRUCTED or INSTANTIATED from the class
-by executing/calling the CONSTRUCTOR of the CLASS
- 
-In this example:
-CLASS, the BLUEPRINT is  Point
-OBJECTS are  p1, p2, p3 ...
-
-Every object has its own copy of the data (attributes)
-
-## REFLECTION QUESTIONS
+## Reflection
 
 1. What is the difference between a class and an object?
      Use Point as your example.
@@ -93,3 +58,5 @@ Every object has its own copy of the data (attributes)
 Working in the terminal.
 Namespace.
 Building a program.
+
+[^1] The concept of **protected** access modifier is outside the scope of this section on oop, because it necessitates the concept of **inheritance**.
